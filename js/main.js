@@ -1,12 +1,12 @@
 const links = [
     {
-        label: "Week 1 Notes",
+        label: "Week1 Notes",
         url: "week1/index.html"
     }
     ]
 
 function loadIndex() {
-    const ol = document.querySelector("#linkslist");
+    const ol = document.querySelector("#linksList");
 
     links.forEach( link => {
         const li = document.createElement("li")
