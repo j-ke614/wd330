@@ -14,7 +14,7 @@ function loadIndex() {
         href.setAttribute("href", link.url);
         href.innerText = link.label;
 
-        link.appendChild(href);
+        li.appendChild(href);
         ol.appendChild(li);
     })
 }
