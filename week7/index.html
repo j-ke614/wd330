@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>WDD 330 Portfolio</title>
+</head>
+<body>
+    <header>
+    <h1>Week 7 Notes</h1>
+    </header>
+    <h4><a href="../index.html">Back to Home</a></h4>
+    <ul>
+        <li>Function properties and methods</li>
+        <p>all functions have a length property that returns the number of parameters the function has</p>
+        <p>The call() method can be used to set the value of this inside a function to an object that is provided as the first argument.</p>
+        <p>We can create some objects that have a name property, then use the call() method to invoke the sayHello() function, providing each object as an argument. This will then take the value of this in the function:</p>
+        <p>A useful feature of this is that it provides result caching, or memoization. If a function takes some time to compute a return value, we can save the result in a cache property. Then if the same argument is used again later, we can return the value from the cache, rather than having to compute the result again. For example, say squaring a number was an expensive computational operation that took a long time. We could rewrite the square() function so it saved each result in a cache object that is a property of the function:</p>
+        <p></p>
+        <li>Immediately Invoked function expressions</li>
+        <p>An Immediately Invoked Function Expression – or IIFE – (pronounced 'iffy') is an anonymous function that, as the name suggests, is invoked as soon as it’s defined.</p>
+        <p>IIFEs are a useful way of performing a task while keeping any variables wrapped up within the scope of the function. This means the global namespace is not polluted with lots of variable names.</p>
+        <p>Temporary Variables</p>
+        <p>There is no way to remove a variable from a scope once it’s been declared. If a variable is only required temporarily, it may cause confusion if it’s still available later in the code. Even worse, the name of the variable may clash with another piece of code (an external JavaScript library, for example) resulting in errors. Placing any code that uses the temporary variable inside an IIFE will ensure it’s only available while the IIFE is invoked, then it will disappear. The example that follows uses an IIFE to swap the value of two global variables, a and b. This process requires the use of a temporary variable, called temp, which only exists while the IIFE is invoked:</p>
+        <p>An IIFE can be used to set up any initialization code that there’ll be no need for again. Because the code is only run once, there’s no need to create any reusable, named functions, and all the variables will also be temporary.</p>
+        <p></p>
+        <li>Self-defining functions</li>
+        <p>The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, and even redefine itself. This is done by assigning an anonymous function to a variable that has the same name as the function.</p>
+        <p>If the function is also assigned to another variable, this variable will maintain the original function definition and not be rewritten. </p>
+        <p>If the function is also assigned to another variable, this variable will maintain the original function definition and not be rewritten. </p>
+        <p>This is called the Lazy Definition Pattern and is often used when some initialization code is required the first time it’s invoked.</p>
+        <p></p>
+        <li>Recursive functions</li>
+        <p>A recursive function is one that invokes itself until a certain condition is met. It’s a useful tool to use when iterative processes are involved. A common example is a function that calculates the factorial of a number:</p>
+        <li>Promises</li>
+        <li>Async functions</li>
+        <li>Functions that return functions</li>
+        <li>Closures</li>
+        <li>Introduction to functional programming</li>
+        <li>Currying</li>
+        <li>Project ― improve some of the functions using techniques from this chapter</li>
+
+        <h3>Novice to Ninja Chapter 13 - AJAX</h3>
+        <p>The web of computers known as the internet can be separated into two parts: clients and servers. A client,
+            such as a web browser, will request a resource (usually a web page) from a server, which processes the
+            request and sends back a response to the client.</p>
+        <p>The term 'Ajax' was coined by Jesse James Garrett in 2005 in the article “Ajax: A New Approach to Web
+            Applications,” where he referred to techniques being used by Google in its recent web applications.</p>
+        <ul>
+            <li><strong>Asynchronous </strong> - When a request for data is sent, the program doesn’t have to stop and
+                wait for the response. It can carry on running, waiting for an event to fire when a response is
+                received. By using callbacks to manage this, programs are able to run in an efficient way, avoiding lag
+                as data is transferred back and forth.</li>
+            <li><strong>JavaScript </strong> - JavaScript was always considered a 'front-end' language, not used to
+                communicate with the server. Ajax enabled JavaScript to send requests and receive responses from a
+                server, allowing content to be updated in real time.</li>
+            <li><strong>XML </strong> - When the term Ajax was originally coined, XML documents were often used to
+                return data. Many different types of data can be sent, but by far the most commonly used in Ajax
+                nowadays is JSON, which is more lightweight and easier to parse than XML.</li>
+        </ul>
+        <ul>Fetch Responses:
+            <li>Text response - response.text - transforms the text stream into a JavaScript string</li>
+            <li>Blob response - response.blob - transforms the data into a blob object</li>
+            <li>JSON response - response.json - transforms the JSON data into a JavaScript object</li>
+            <li>Creating a response object - you can also create your own response objects using a constructor function
+                <br><strong>For example:</strong>
+                <br>const response = new Response( 'Hello!', {
+                <br> ok: true,
+                <br> status: 200,
+                <br> statusText: 'OK',
+                <br> type: 'cors',
+                <br> url: '/api'
+                <br> });
+            </li>
+        </ul>
+    </ul>
+
+    <a href="../todo/index.html">Todo Example</a>
+       
+</body>
+</hmtl>

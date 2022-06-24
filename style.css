@@ -1,0 +1,54 @@
+body {
+    font-size: 16pt;
+}
+
+header {
+    background-color: rgb(22, 19, 204);
+    padding: 15px;
+}
+
+footer {
+    background-color: rgb(22, 19, 204);
+}
+ 
+h1 {
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: #E5E5E5;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+footer {
+    background-color: rgb(22, 19, 204);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ol li, ol li::marker {
+    margin-left: 3rem;
+    color: #242F40;
+    list-style: square;
+}
+
+a {
+    color: black;
+}
+
+header a {
+    color: #242f40;
+}
+
+
+form {
+    background-color: #495e7d;
+    border: #CCA43B 3px dotted;
+    padding: 5%;
+    color: #E5E5E5;
+}

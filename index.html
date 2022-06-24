@@ -4,16 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>WDD 330 Portfolio</title>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <h1>My Portfolio</h1>
-    <ol id ="linksList">
-        
-    </ol>
+    <header>
+    <h1>WDD 330 Portfolio</h1>
+    </header>
+    <main>
+        <ol id="weeklyList">Weekly Assignments & Notes:</ol>
+        <ol id="teamActivity">Team Activities:</ol>
+        <ol id="challenge">Challenges:</ol>
+    </main>
+
+    <footer>
+        <p>Jake | WDD-330 Web Frontend Development II | <a href="https://byui.edu/">BYU-I</a></p>
+    </footer>
     <script>
         loadIndex();
+    </script>
+    <script>
+         const links = [
+            {
+                label: "Week 1",
+                url: "week1/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 2",
+                url: "week2/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 2 Cardio",
+                url: "week2/team2_activity/index.html",
+                type: "activity"
+            },
+            {
+                label: "Week 3",
+                url: "week3/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 3 - Array Cardio",
+                url: "week3/team2_activity/index.html",
+                type: "activity"
+            },
+            {
+                label: "Week 4",
+                url: "week4/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 4 - Tic Tac Toe",
+                url: "week4/team2_activity/index.html",
+                type: "activity"
+            },
+            {
+                label: "Week 5",
+                url: "week5/index.html",
+                type: "notes"
+            },
+            {
+                label: "Challenge 1",
+                url: "week6/challenge_1/index.html",
+                type: "challenge"
+            },
+            {
+                label: "Week 5 - Great Hikes",
+                url: "week5/team2_activity/index.html",
+                type: "activity"
+            },
+            {
+                label: "Week 7",
+                url: "week7/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 7 - Great Hikes Part 2",
+                url: "week7/team2_activity/index.html",
+                type: "activity"
+            },
+            {
+                label: "Week 8",
+                url: "week8/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 8 - Star Wars API",
+                url: "week8/team2_activity/swapi.html",
+                type: "activity"
+            },
+            {
+                label: "Week 9",
+                url: "week9/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 9 - DrumKit",
+                url: "week9/team2_activity/index.html",
+                type: "activity"
+            },
+            {
+                label: "Activity - Modern Front End Development",
+                url: "week9/activity/parcel/src/index.html",
+                type: "notes"
+            },
+            {
+                label: "Week 10",
+                url: "week10/index.html",
+                type: "notes"
+            }
+        ]
+    listWeeklyItems();
     </script>
 </body>
 </hmtl>
