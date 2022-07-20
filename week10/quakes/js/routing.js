@@ -56,4 +56,5 @@ async function insertViewAsync(viewPromise, controller) {
   const contentElement = document.getElementById('content');
   //debugger;
   contentElement.innerHTML = await viewPromise;
-  controller.init(
+  controller.init();
+}
