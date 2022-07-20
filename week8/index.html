@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>WDD 330 Portfolio</title>
+</head>
+<body>
+    <header>
+    <h1>Week 8 Notes</h1>
+    </header>
+    <h4><a href="../index.html">Back to Home</a></h4>
+        <h3> HTML5 & CSS3 for the Real World Chapter 8</h3>
+        <h4>transform property lets you translate, rotate, scale and/or skew</h4>
+        <ul>
+            <li><i>Transaltion</i> - lets you move elements without impacting the flow. A translated
+                element can only be moved relative to its current position. 
+                <br><strong>translate(x,y)</strong>
+            </li>
+            <li><i>Scaling</i> - <strong>scale(x,y)</strong> scales an element by the defined factors horizontally and
+                vertically.</li>
+            <li><i>Rotation</i> - <strong>rotate()</strong> rotates an element around the point of origin by a specified
+                angle value.
+            </li>
+            <li><i>Skew</i> - <strong>skew(x,y)</strong> specifies a skew along the x and y axes. If only 1 value is
+                provided then x will only be skewed.</li>
+            <li><i>Changing the Origin of the Transform</i> - you can control the origin from which your transforms are
+                applied.</li>
+        </ul>
+        <h4>Animations</h4>
+            <br> .verbose {
+            <br> animation-name: appearDisappear;
+            <br> animation-duration: 300ms;
+            <br> animation-timing-function: ease-in;
+            <br> animation-iteration-count: 1;
+            <br> animation-direction: alternate;
+            <br> animation-delay: 5s;
+            <br> animation-fill-mode: backwards;
+            <br> animation-play-state: running;
+            <br> }
+            <br>
+            <br> /* shorthand */
+            <br> .concise {
+            <br> animation: 300ms ease-in alternate 5s backwards appearDisappear;
+            <br> }
+        </p>
+
+        <h3> HTML5 & CSS3 for the Real World Chapter 12 - Canvas, SVG and Drag & Drop</h3>
+        <p>Canvas, SVG and Drag & Drop are all three APIs</p>
+        <h4>Canvas</h4>
+        <p>We can draw anything we can imagine, all through JavaScript. This can improve the performance of our websites
+            by avoiding the need to download images off the network. Canvas gives us the power to manipulate pixels in
+            images and even video. In the book it is used to change a modern color video into a conventional black and
+            white to match the overall look and feel of the page.</p>
+        <p>Below is a canvas example using the canvas element, style and script. </p>
+        <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+            Sorry! Your browser doesn’t support Canvas.
+        </canvas>
+        <h4>SVG</h4>
+        <p> SVG stands for Scalable Vector Graphics, a specific file format that allows you to describe vector graphics
+            using XML. A major selling point of vector graphics in general is that, unlike bitmap images (such as GIF,
+            JPEG, PNG, and TIFF), vector images preserve their quality even as you blow them up or shrink them down.</p>
+        </svg>
+        <p>tools that make SVG images <a
+                href="http://inkscape.org/">http://inkscape.org/</a></p>
+
+        <h4>Drag & Drop</h4>
+        <p>This API allows us to specify that certain elements are draggable, and then specify what should happen when
+            these draggable elements are dragged over or dropped onto other elements on the page.</p>
+        </ul>
+
+   
+
+    </main>
+
+</body>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    context.strokeStyle = "red";
+    context.fillStyle = "rgba(0, 0, 255, 0.5)";
+    context.fillRect(10, 10, 100, 100);
+    context.strokeRect(10, 10, 100, 100);
+</script>
+<footer>
+    <p>Jake | WDD-330 Web Frontend Development II | <a href="https://byui.edu/">BYU-I</a></p>
+</footer>
+</html>
