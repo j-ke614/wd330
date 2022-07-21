@@ -33,8 +33,7 @@ footer {
 
 ol li, ol li::marker {
     margin-left: 3rem;
-    color: #242F40;
-    list-style: square;
+    list-style:none;
 }
 
 a {
